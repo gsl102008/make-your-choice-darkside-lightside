@@ -1,34 +1,54 @@
-/*
-  This is your site JavaScript code - you can add interactivity!
-*/
 
-// Print a message in the browser's dev tools console each time the page loads
-// Use your menus or right-click / control-click and choose "Inspect" > "Console"
-console.log("Hello 🌎");
 
-/* 
-Make the "Click me!" button move when the visitor clicks it:
-- First add the button to the page by following the steps in the TODO 🚧
-*/
-const btn = document.querySelector("button"); // Get the button from the page
-if (btn) { // Detect clicks on the button
-  btn.onclick = function () {
-    // The 'dipped' class in style.css changes the appearance on click
-    btn.classList.toggle("dipped");
-  };
+let storyIndex = 0;
+
+const storyData = [
+    {
+        title: "Introduction",
+        text: "You find yourself in a mysterious forest. What do you do?",
+        choices: ["Explore the forest", "Stay put"]
+    },
+    {
+        title: "Exploration",
+        text: "While exploring, you come across a cave. Enter the cave?",
+        choices: ["Enter the cave", "Keep exploring the forest"]
+    },
+    {
+        title: "Cave Adventure",
+        text: "Inside the cave, you find a treasure chest. Open it?",
+        choices: ["Open the chest", "Leave the cave"]
+    },
+    // Add more story segments as needed
+];
+
+function updateStory() {
+    const storyTitleElement = document.getElementById("story-title");
+    const storyTextElement = document.getElementById("story-text");
+    const choicesContainer = document.getElementById("choices-container");
+
+    const currentStory = storyData[storyIndex];
+
+    storyTitleElement.textContent = currentStory.title;
+    storyTextElement.textContent = currentStory.text;
+
+    choicesContainer.innerHTML = "";
+    currentStory.choices.forEach((choice, index) => {
+        const button = document.createElement("button");
+        button.textContent = choice;
+        button.onclick = () => makeChoice(index + 1);
+        choicesContainer.appendChild(button);
+    });
 }
 
+function makeChoice(choiceIndex) {
+    // Update story index based on user's choice
+    if (storyIndex < storyData.length - 1) {
+        storyIndex++;
+        updateStory();
+    } else {
+        alert("Congratulations! You reached the end of the story.");
+    }
+}
 
-// ----- GLITCH STARTER PROJECT HELPER CODE -----
-
-// Open file when the link in the preview is clicked
-let goto = (file, line) => {
-  window.parent.postMessage(
-    { type: "glitch/go-to-line", payload: { filePath: file, line: line } }, "*"
-  );
-};
-// Get the file opening button from its class name
-const filer = document.querySelectorAll(".fileopener");
-filer.forEach((f) => {
-  f.onclick = () => { goto(f.dataset.file, f.dataset.line); };
-});
+// Initial story update
+updateStory();
