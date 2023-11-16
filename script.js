@@ -4,9 +4,9 @@ let storyIndex = 0;
 
 const storyData = [
     {
-        title: "Introduction",
-        text: "You find yourself in a mysterious forest. What do you do?",
-        choices: ["Explore the forest", "Stay put"]
+        title: "MAY THE FORCE BE WITH YOU...",
+        text: "After traveling though space for several months you come accross a planet. What do you do?",
+        choices: ["Explore the Planet", "Stay put"]
     },
     {
         title: "Exploration",
