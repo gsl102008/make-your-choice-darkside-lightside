@@ -1,65 +1,62 @@
-let storyIndex = 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #e6e6e6;
+            text-align: center;
+        }
 
-const storyData = [
-    {
-        title: "MAY THE FORCE BE WITH YOU...",
-        text: "After traveling through space for several weeks, you come across a planet. You decide to land your Starfighter. What do you do next?",
-        choices: ["Explore the Planet", "Take a Nap"]
-    },
-    {
-        text: "While exploring, you meet a small creature who urges you to go with him. He seems jittery and asks you to go with him into a cave. Do you go into the cave?",
-        choices: ["Enter the cave", "Keep exploring the planet"]
-    },
-    {
-        text: "Inside the cave, you see a flash of light and realize you are face to face with Darth Sidious. Do you stay and fight?",
-        choices: ["Yes, your lightsaber is ready", "No, you run away"]
-    },
-    {
-        text: "You pull out your lightsaber and begin the battle. You are surprised that he seems to be slow and possibly already hurt. Then out of nowhere, Anakin Skywalker appears, and Darth Sidious surrenders. What's your next choice?",
-        choices: ["The Light Side, let him live", "The Dark Side, end him"]
-    },
-    {
-        title: "Waking Up",
-        text: "Suddenly, you wake up and realize it was all a dream. A new adventure awaits...",
-        choices: ["Continue Dreaming", "End"]
-    },
-    {
-        title: "A New Adventure",
-        text: "You find yourself on a different planet. Another adventure awaits...",
-        choices: ["Explore", "Rest"]
-    }
-];
+        #story-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ff0808;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-function updateStory() {
-    const storyTitleElement = document.getElementById("story-title");
-    const storyTextElement = document.getElementById("story-text");
-    const choicesContainer = document.getElementById("choices-container");
+        #story-title {
+            color: #333333;
+        }
 
-    const currentStory = storyData[storyIndex];
+        #story-text {
+            color: #000013;
+        }
 
-    storyTitleElement.textContent = currentStory.title;
-    storyTextElement.textContent = currentStory.text;
+        #choices-container {
+            margin-top: 20px;
+        }
 
-    choicesContainer.innerHTML = "";
-    currentStory.choices.forEach((choice, index) => {
-        const button = document.createElement("button");
-        button.textContent = choice;
-        button.onclick = () => makeChoice(index);
-        choicesContainer.appendChild(button);
-    });
-}
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #000013;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+        }
 
-function makeChoice(choiceIndex) {
-    const nextSegment = storyData[storyIndex].choices[choiceIndex];
-
-    if (nextSegment !== undefined) {
-        storyIndex = nextSegment === "Continue Dreaming" ? 4 : nextSegment;
-        updateStory();
-    } else {
-        alert("The End. Thanks for playing!");
-    }
-}
-
-// Initial story update
-updateStory();
-
+        button:hover {
+            background-color: #000013;
+        }
+    </style>
+    <title>Interactive Story Game</title>
+</head>
+<body>
+    <div id="story-container">
+        <h1 id="story-title">Welcome to the Interactive Story Game</h1>
+        <p id="story-text">Once upon a time...</p>
+        <div id="choices-container">
+            <button onclick="makeChoice(1)">Choice 1</button>
+            <button onclick="makeChoice(2)">Choice 2</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
