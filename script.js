@@ -1,7 +1,6 @@
 
 
 let storyIndex = 0;
-
 const storyData = [
     {
         title: "MAY THE FORCE BE WITH YOU...",
@@ -17,12 +16,11 @@ const storyData = [
         choices: ["Yes, your lightsaber is ready", "No, you run away"]
     },
     {
-        text: "You pull out your lightsaber and begin the battle. pen it?",
-        choices: ["Open the chest", "Leave the cave"]
+        text: "You pull out your lightsaber and begin the battle. You are suprised that he seems to be slow and possibly already hurt. Then out of no where, Anakin Skywalker appears and Darth Sidious surrenders. What's your next choice?",
+        choices: ["The Light Side, let him live", "The Dark Side, end him"]
     },
   
   
-  // Add more story segments as needed
 ];
 
 function updateStory() {
@@ -45,7 +43,7 @@ function updateStory() {
 }
 
 function makeChoice(choiceIndex) {
-    // Update story index based on user's choice
+    // Update story based on choice
     if (storyIndex < storyData.length - 1) {
         storyIndex++;
         updateStory();
@@ -53,6 +51,5 @@ function makeChoice(choiceIndex) {
         alert("Suddenly, you wake up and realize it was all a dream. The End.");
     }
 }
-
 // Initial story update
 updateStory();
