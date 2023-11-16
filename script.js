@@ -9,7 +9,7 @@ const storyData = [
         choices: ["Explore the Planet", "Take a Nap"]
     },
     {
-        text: "While exploring, you come across a cave. Enter the cave?",
+        text: "While exploring, you meet a small creature who urges you to go with him. He seems jittery and asks you to go with him into a cave. Do you go into the cave?",
         choices: ["Enter the cave", "Keep exploring the forest"]
     },
     {
@@ -45,7 +45,7 @@ function makeChoice(choiceIndex) {
         storyIndex++;
         updateStory();
     } else {
-        alert("Congratulations! You reached the end of the story.");
+        alert("Suddenly a black hole appears and you fall through it. The End.");
     }
 }
 
