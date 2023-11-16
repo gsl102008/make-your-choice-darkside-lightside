@@ -10,14 +10,19 @@ const storyData = [
     },
     {
         text: "While exploring, you meet a small creature who urges you to go with him. He seems jittery and asks you to go with him into a cave. Do you go into the cave?",
-        choices: ["Enter the cave", "Keep exploring the forest"]
+        choices: ["Enter the cave", "Keep exploring the planet"]
     },
     {
-        title: "Cave Adventure",
-        text: "Inside the cave, you find a treasure chest. Open it?",
+        text: "Inside the cave, you see a flash of light and realize you are face to face with Darth Sidious. Do you stay and fight?",
+        choices: ["Yes, your lightsaber is ready", "No, you run away"]
+    },
+    {
+        text: "You pull out your lightsaber and begin the battle. pen it?",
         choices: ["Open the chest", "Leave the cave"]
     },
-    // Add more story segments as needed
+  
+  
+  // Add more story segments as needed
 ];
 
 function updateStory() {
@@ -45,7 +50,7 @@ function makeChoice(choiceIndex) {
         storyIndex++;
         updateStory();
     } else {
-        alert("Suddenly a black hole appears and you fall through it. The End.");
+        alert("Suddenly, you wake up and realize it was all a dream. The End.");
     }
 }
 
