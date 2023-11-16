@@ -19,116 +19,35 @@ The game is structured into parts and each represent a part of the story. The pl
 - **Storyline**: Created the `storyData` array in the `script.js` file to have an engaging narrative.
 
 
-## Basic Syntax
 
-These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
+# Overview
 
-### Heading
+Welcome to an exciting Star Wars themed, choose your own fate game! This simple game allows users to make choices that affect the progression of the story. This project shows an example of my understanding of the JavaScript language.
 
-# H1
-## H2
-### H3
+The software is a text-based adventure that gives users an in a space-themed narrative. It then offers choices that influence the storyline. The primary goal is to demonstrate my proficiency in JavaScript and show my ability to create web applications.
 
-### Bold
+The accompanying Software Demo Video provides a 4-5 minute walkthrough of the software.
 
-**bold text**
+[Software Demo Video](http://youtube.link.goes.here)
 
-### Italic
+# Development Environment
 
-*italicized text*
+The software was developed using basic web technologies:
 
-### Blockquote
+-[HTML]
+-[JavaScript]
 
-> blockquote
+# Useful Websites
 
-### Ordered List
+{Make a list of websites that you found helpful in this project}
 
-1. First item
-2. Second item
-3. Third item
+- [Web Site Name](http://url.link.goes.here)
+- [Web Site Name](http://url.link.goes.here)
 
-### Unordered List
+# Future Work
 
-- First item
-- Second item
-- Third item
+{Make a list of things that you need to fix, improve, and add in the future.}
 
-### Code
-
-`code`
-
-### Horizontal Rule
-
----
-
-### Link
-
-[Markdown Guide](https://www.markdownguide.org)
-
-### Image
-
-![alt text](https://www.markdownguide.org/assets/images/tux.png)
-
-## Extended Syntax
-
-These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
-
-### Table
-
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-### Fenced Code Block
-
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-### Footnote
-
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
-### Heading ID
-
-### My Great Heading {#custom-id}
-
-### Definition List
-
-term
-: definition
-
-### Strikethrough
-
-~~The world is flat.~~
-
-### Task List
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
-
-### Emoji
-
-That is so funny! :joy:
-
-(See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
-
-### Highlight
-
-I need to highlight these ==very important words==.
-
-### Subscript
-
-H~2~O
-
-### Superscript
-
-X^2^
+- Item 1
+- Item 2
+- Item 3
