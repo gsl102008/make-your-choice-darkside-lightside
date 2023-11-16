@@ -55,6 +55,7 @@ function makeChoice(choiceIndex) {
     if (storyIndex === 2 && choiceIndex === 2) {
         alert("Game Over. You woke up.");
     }
+
 }
 // Initial story update
 updateStory();
