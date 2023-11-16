@@ -1,48 +1,39 @@
-# Hello website!
+# Choose Your Own Adventure
 
-This is a basic HTML starter project you can build on however you like. No need to save. While you develop your site, your changes will happen ✨ immediately in the preview window. On the left you'll see the files that make up your site, including HTML, JavaScript, and CSS. You can upload assets like images or audio in `assets`. The rest is up to you and your imagination. 🦄
+Welcome to the Interactive Storytelling Game! This simple web-based game allows users to make choices that affect the progression of the story.
 
-_Last updated: 28 Feb 2023_
+## Table of Contents
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Game Structure](#game-structure)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
 
-## What's in this project?
+## Introduction
+This project is a basic implementation of an interactive storytelling game using HTML, CSS, and JavaScript. Players make choices at each step, influencing the direction of the story.
 
-← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
+## Getting Started
+1. Clone or download the repository to your local machine.
+2. Open the `index.html` file in a web browser to start the game.
 
-← `index.html`: This is the main web page for your site. The HTML defines the structure and content of the page using _elements_. You'll see references in the HTML to the JS and CSS files. Try clicking the image in the center of the page!
+## Game Structure
+The game is structured into segments, each representing a part of the story. The player makes choices at each segment, leading to different outcomes.
 
-← `style.css`: CSS files add styling rules to your content. The CSS applies styles to the elements in your HTML page. The style rules also make the image move when you click it.
+- **Introduction**: Sets the scene for the story.
+- **Exploration**: The player decides whether to explore a cave or continue in the forest.
+- **Cave Adventure**: The player encounters a treasure chest and decides whether to open it or leave the cave.
 
-← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript. The code in the JavaScript file runs when the page loads, and when the visitor clicks the button you can add using the code in the TODO.
+Feel free to expand the `storyData` array in the `script.js` file to add more segments and choices.
 
-Open each file and check out the comments (in gray) for more info.
+## Customization
+- **Styling**: Customize the visual appearance of the game by modifying the styles in the `styles.css` file.
+- **Storyline**: Expand and modify the `storyData` array in the `script.js` file to create a more complex and engaging narrative.
 
-## Try this next 🏗️
+## Contributing
+Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
 
-Take a look in `TODO.md` for next steps you can try out in your new site!
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-___Want a minimal version of this project to build your own website? Check out [Blank Website](https://glitch.com/edit/#!/remix/glitch-blank-website)!___
-
-## Ready to share your site?
-
-Add these meta tags for SEO and social sharing between your page `<head></head>` tags, changing the values for your site:
-
-```
-<link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
-<meta name="description" content="A simple website, built with Glitch. Remix it to get your own."/>
-<meta name="robots" content="index,follow" />
-<meta property="og:title" content="Hello World!" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
-<meta property="og:description" content="A simple website, built with Glitch. Remix it to get your own."/>
-<meta property="og:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"/>
-<meta name="twitter:card" content="summary" />
-```
-
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
-
-## You built this with Glitch!
-
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
-
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+Happy storytelling!
