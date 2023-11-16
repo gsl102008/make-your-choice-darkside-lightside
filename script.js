@@ -5,11 +5,10 @@ let storyIndex = 0;
 const storyData = [
     {
         title: "MAY THE FORCE BE WITH YOU...",
-        text: "After traveling though space for several months you come accross a planet. What do you do?",
-        choices: ["Explore the Planet", "Stay put"]
+        text: "After traveling though space for several weeks you come across a planet. You decide to land your Starfighter. What do you do next?",
+        choices: ["Explore the Planet", "Take a Nap"]
     },
     {
-        title: "Exploration",
         text: "While exploring, you come across a cave. Enter the cave?",
         choices: ["Enter the cave", "Keep exploring the forest"]
     },
