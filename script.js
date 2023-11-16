@@ -50,6 +50,11 @@ function makeChoice(choiceIndex) {
     } else {
         alert("Suddenly, you wake up and realize it was all a dream. The End.");
     }
+  
+  // If the second choice is made, end the game
+    if (storyIndex === 2 && choiceIndex === 2) {
+        alert("Game Over. You woke up.");
+    }
 }
 // Initial story update
 updateStory();
