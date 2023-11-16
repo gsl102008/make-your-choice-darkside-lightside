@@ -1,11 +1,19 @@
-# Choose Your Own Adventure
+# Overview
 
-Welcome to an exciting Star Wars themed, choose your own fate game! This simple game allows users to make choices that affect the progression of the story.
+Welcome to an exciting Star Wars themed, choose your own fate game! This simple game allows users to make choices that affect the progression of the story. This project shows an example of my understanding of the JavaScript language.
 
-## Table of Contents
-- [Introduction]
-- [Game Structure]
-- [Creation]
+The software is a text-based adventure that gives users an in a space-themed narrative. It then offers choices that influence the storyline. The primary goal is to demonstrate my proficiency in JavaScript and show my ability to create web applications.
+
+The accompanying Software Demo Video provides a 4-5 minute walkthrough of the software.
+
+[Software Demo Video](http://youtube.link.goes.here)
+
+## Development Environment
+
+The software was developed using these web technologies:
+
+- **HTML**
+- **JavaScript**
 
 ## Introduction
 This project is a basic choose your own adventure game. It uses HTML and JavaScript to let the user choose thier adventure. Players make choices at each step which leads the direction of the story. If the wrong choice is made then the end of game message will be shown.
@@ -20,22 +28,6 @@ The game is structured into parts and each represent a part of the story. The pl
 
 
 
-# Overview
-
-Welcome to an exciting Star Wars themed, choose your own fate game! This simple game allows users to make choices that affect the progression of the story. This project shows an example of my understanding of the JavaScript language.
-
-The software is a text-based adventure that gives users an in a space-themed narrative. It then offers choices that influence the storyline. The primary goal is to demonstrate my proficiency in JavaScript and show my ability to create web applications.
-
-The accompanying Software Demo Video provides a 4-5 minute walkthrough of the software.
-
-[Software Demo Video](http://youtube.link.goes.here)
-
-# Development Environment
-
-The software was developed using basic web technologies:
-
--[HTML]
--[JavaScript]
 
 # Useful Websites
 
