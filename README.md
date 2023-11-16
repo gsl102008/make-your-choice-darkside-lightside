@@ -15,26 +15,12 @@ The software was developed using these web technologies:
 - **HTML**
 - **JavaScript**
 
-## Introduction
-This project is a basic choose your own adventure game. It uses HTML and JavaScript to let the user choose thier adventure. Players make choices at each step which leads the direction of the story. If the wrong choice is made then the end of game message will be shown.
-
-
-## Game Structure
-The game is structured into parts and each represent a part of the story. The player makes choices at each question which leads to different outcomes.
-
-
-## Creation
-- **Storyline**: Created the `storyData` array in the `script.js` file to have an engaging narrative.
-
-
-
-
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
+During the development process, the following websites were helpful:
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [W3Schools](https://www.w3schools.com/)
+- [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
 
 # Future Work
 
