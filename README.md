@@ -4,9 +4,9 @@ Welcome to an exciting Star Wars themed, choose your own fate game! This simple 
 
 The software is a text-based adventure that gives users an in a space-themed narrative. It then offers choices that influence the storyline. The primary goal is to demonstrate my proficiency in JavaScript and show my ability to create web applications.
 
-The accompanying Software Demo Video provides a 4-5 minute walkthrough of the software.
+The accompanying Software Demo Video provides a walkthrough of the software.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/pcXeBq7yYh4?si=P6kKEAcTQVp6xV1Z)
 
 ## Development Environment
 
