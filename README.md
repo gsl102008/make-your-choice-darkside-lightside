@@ -24,8 +24,8 @@ During the development process, the following websites were helpful:
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
+Things to fix, improve, and add in the future include:
 
-- Item 1
-- Item 2
-- Item 3
+- Add more visuals to make the game look better
+- Organize the code better
+- Make a longer and more complex storyline
